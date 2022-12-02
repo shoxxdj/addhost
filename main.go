@@ -27,7 +27,7 @@ func main() {
         if err != nil {
             log.Fatal(err)
         }
-        if _, err := f.Write([]byte(ip+" "+domain)); err != nil {
+        if _, err := f.Write([]byte(ip+" "+domain+"\n")); err != nil {
             log.Fatal(err)
         }
         if err := f.Close(); err != nil {
